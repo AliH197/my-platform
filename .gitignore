@@ -45,3 +45,5 @@ credentials.json
 .fuse_hidden*
 .directory
 .trash/
+
+package-lock.json
