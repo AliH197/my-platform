@@ -12,6 +12,8 @@ function App() {
         and production systems.
       </p>
 
+      <p>Hello! Welcome!</p>
+
       <p>Initial frontend setup in progress.</p>
     </main>
   )
