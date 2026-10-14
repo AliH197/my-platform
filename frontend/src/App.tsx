@@ -1,20 +1,29 @@
 import './App.css'
+import intro_photo from './assets/Intro_Alissa_Flower.jpg'
 
 function App() {
   return (
-    <main>
-      <h1>Alissa Hoover</h1>
+    <main className="landing-page">
 
-      <h2>Senior Capstone Production Platform</h2>
+      <img
+        src={intro_photo}
+        alt="Portrait of Alissa Hoover"
+        className="photo"
+      />
 
-      <p>
-        This site will present my software projects, engineering decisions,
-        and production systems.
-      </p>
+      <section className="intro">
+        <h1>Senior Capstone Production Platform</h1>
 
-      <p>Hello! Welcome!</p>
+        <h2>Computer Science Major</h2>
 
-      <p>Initial frontend setup in progress.</p>
+        <p>Hello! Welcome!</p>
+        <p className="description">
+            I'm a Computer Science major at Grove City College. This is part 
+            of my senior capstone production platform project. My hobbies include 
+            crocheting, playing guitar, and painting. I enjoy coding and video games, 
+            so Computer Science is where a lot of my passions lie. Thanks for stopping by!
+        </p>
+      </section>
     </main>
   )
 }
