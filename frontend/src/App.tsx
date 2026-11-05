@@ -1,7 +1,24 @@
 import './App.css'
 import intro_photo from './assets/Intro_Alissa_Flower.jpg'
 
+type ReportKind = 'bug' | 'feature'
+
+type Report = {
+  id: string
+  text: string
+  kind: ReportKind
+}
+
+
 function App() {
+
+  const sampleReport: Report = {
+    id: '1',
+    text: 'Navigation link is broken',
+    kind: 'bug',
+  }
+
+
   return (
     <main className="landing-page">
 
@@ -24,6 +41,12 @@ function App() {
             so Computer Science is where a lot of my passions lie. Thanks for stopping by!
         </p>
       </section>
+
+      <section className="report-board">
+        <h2>Bugs & Feature Requests</h2>
+        <p>{sampleReport.text} ({sampleReport.kind})</p>
+      </section>
+
     </main>
   )
 }
