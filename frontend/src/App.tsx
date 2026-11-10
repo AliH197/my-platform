@@ -16,7 +16,7 @@ function App() {
     id: '1',
     text: 'Navigation link is broken',
     kind: 'bug',
-  }
+  };
 
 
   return (
@@ -48,7 +48,7 @@ function App() {
       </section>
 
     </main>
-  )
+  );
 }
 
 export default App
